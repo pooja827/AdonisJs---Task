@@ -25,8 +25,7 @@ import Expense from 'App/Modules/Expenses/Http/ExpensesController'
 import './expense-routes'
 //import ExpensesController from'App/Modules/Expenses/Http/Expense2'
 import ExpenseControl from 'App/Modules/Expenses/Http/Expense2'
-import validation from 'App/Controllers/Http/MyFirstsController'
-import 
+// import validation from 'App/Controllers/Http/MyFirstsController'
 
 
 // Route.get( '/',  async (ctx) => {
@@ -50,10 +49,10 @@ Route.get('controller','myFirstsController.check')
 //   return new validation().check({request})
 
 // })
-Route.get('/control', async ({ request, response }) => {
-  const validations = new validation()
-  await validations.check({request, response})
-})
+// Route.get('/control', async ({ request, response }) => {
+//   const validations = new validation()
+//   await validations.check({request, response})
+// })
 
 Route.group(()=>{
   Route.get('expenses','ExpensesController.index')
